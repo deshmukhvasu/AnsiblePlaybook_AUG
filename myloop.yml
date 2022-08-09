@@ -2,11 +2,11 @@
 - hosts: all
   become: yes
   tasks:
-  - name: I want to install Multi-package
+  - name: install multi package
     apt:
      name: "{{ item }}"
      state: present
-  loop:
+    loop:
      - git
      - tree
      - wget
