@@ -1,2 +1,9 @@
+[mywebservers]
 172.31.81.14
+172.31.24.95
+
+[myubuntunode]
+172.31.81.14
+
+[myredhatnode]
 172.31.24.95
