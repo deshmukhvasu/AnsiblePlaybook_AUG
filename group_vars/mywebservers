@@ -1,2 +1,3 @@
-mywebpackagesforubuntu= apache2
-mywebpackagesforredhat= httpd
+---
+mywebpackagesforubuntu: apache2
+mywebpackagesforredhat: httpd
