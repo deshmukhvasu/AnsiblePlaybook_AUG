@@ -5,25 +5,25 @@
 
   - name: I want to install a webserver
     apt:
-     name: apache2
+     name: "{{mywebpackagesforubuntu}}"
      state: present
     when: ansible_os_family == "Debian"
 
   - name: I want to start the webserver
     service:
-     name: apache2
+     name: "{{mywebpackagesforubuntu}}"
      state: started
     when: ansible_os_family == "Debian"
 
   - name: I want to install webserver Redhat node
     yum:
-     name: httpd
+     name: "{{mywebpackagesforredhat}}"
      state: present
     when: ansible_os_family == "RedHat"
 
 
   - name: I want to start the Redhat server
     service:
-     name: httpd
+     name: "{{mywebpackagesforredhat}}"
      state: started
     when: ansible_os_family == "RedHat"    
