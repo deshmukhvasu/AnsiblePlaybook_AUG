@@ -8,3 +8,8 @@
     apt:
      name: apache2
      state: present
+
+  - name: I want to copy the index file into ansible node
+    template:
+       src: myindex.j2
+       dest: /home/www/html/index.html   
