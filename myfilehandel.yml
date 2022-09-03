@@ -12,4 +12,4 @@
   - name: I want to copy the index file into ansible node
     template:
        src: myindex.j2
-       dest: /home/www/html/index.html   
+       dest: /var/www/html/index.html   
